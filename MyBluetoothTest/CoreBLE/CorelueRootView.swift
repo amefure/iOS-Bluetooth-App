@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CorelueRootView: View {
     @ObservedObject var blueCentralManager = BlueCentralManager.shared
     @ObservedObject var bluePeripheralManager = BluePeripheralManager.shared
     
@@ -135,6 +135,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CorelueRootView()
     }
 }

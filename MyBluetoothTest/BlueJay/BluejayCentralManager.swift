@@ -13,10 +13,10 @@ let service = ServiceIdentifier(uuid: "00000000-0000-1111-1111-111111111111")
 let readCharacteristic = CharacteristicIdentifier(uuid: "00000000-1111-1111-1111-111111111111", service: service)
 let writeCharacteristic = CharacteristicIdentifier(uuid: "00000000-2222-1111-1111-111111111111", service: service)
 
-class BluejayManager: ObservableObject {
+class BluejayCentralManager: ObservableObject {
     
     /// シングルトン
-    static var shared = BluejayManager()
+    static var shared = BluejayCentralManager()
     
     /// ログ出力用
     @Published var log = ""
@@ -145,7 +145,7 @@ class BluejayManager: ObservableObject {
 
 }
 
-extension BluejayManager: LogObserver, ConnectionObserver, ServiceObserver, DisconnectHandler {
+extension BluejayCentralManager: LogObserver, ConnectionObserver, ServiceObserver, DisconnectHandler {
     
     func didDisconnect(from peripheral: PeripheralIdentifier, with error: Error?, willReconnect autoReconnect: Bool) -> AutoReconnectMode {
         AutoReconnectMode.noChange

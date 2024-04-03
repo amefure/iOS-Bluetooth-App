@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BlueJayRootView: View {
     
-    @ObservedObject var bluejayManager = BluejayManager.shared
+    @ObservedObject var bluejayManager = BluejayCentralManager.shared
     var body: some View {
         // MARK : - Central
         VStack{
