@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1242AF4D2BBD7FCA00A62CA9 /* BluejayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242AF4C2BBD7FCA00A62CA9 /* BluejayManager.swift */; };
+		1242AF502BBD80BC00A62CA9 /* BluePeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242AF4F2BBD80BC00A62CA9 /* BluePeripheralManager.swift */; };
+		1242AF532BBD81A000A62CA9 /* BlueJayRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242AF522BBD81A000A62CA9 /* BlueJayRootView.swift */; };
 		1255FF2A2B46B2A600888D21 /* MyBluetoothTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF292B46B2A600888D21 /* MyBluetoothTestApp.swift */; };
 		1255FF2C2B46B2A600888D21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF2B2B46B2A600888D21 /* ContentView.swift */; };
 		1255FF2E2B46B2A800888D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255FF2D2B46B2A800888D21 /* Assets.xcassets */; };
 		1255FF312B46B2A800888D21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255FF302B46B2A800888D21 /* Preview Assets.xcassets */; };
+		1255FF382B46B2CA00888D21 /* BlueCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF372B46B2CA00888D21 /* BlueCentralManager.swift */; };
+		7A85A8E6924FD3132CF18847 /* Pods_MyBluetoothTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71096F87957CBEB2AC6957E4 /* Pods_MyBluetoothTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1242AF4C2BBD7FCA00A62CA9 /* BluejayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluejayManager.swift; sourceTree = "<group>"; };
+		1242AF4F2BBD80BC00A62CA9 /* BluePeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePeripheralManager.swift; sourceTree = "<group>"; };
+		1242AF522BBD81A000A62CA9 /* BlueJayRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueJayRootView.swift; sourceTree = "<group>"; };
 		1255FF262B46B2A600888D21 /* MyBluetoothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBluetoothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1255FF292B46B2A600888D21 /* MyBluetoothTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBluetoothTestApp.swift; sourceTree = "<group>"; };
 		1255FF2B2B46B2A600888D21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1255FF2D2B46B2A800888D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1255FF302B46B2A800888D21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1255FF372B46B2CA00888D21 /* BlueCentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCentralManager.swift; sourceTree = "<group>"; };
+		1255FF392B46BD3A00888D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71096F87957CBEB2AC6957E4 /* Pods_MyBluetoothTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBluetoothTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EEDA0D39796E31385F9804 /* Pods-MyBluetoothTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBluetoothTest.debug.xcconfig"; path = "Target Support Files/Pods-MyBluetoothTest/Pods-MyBluetoothTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B06F5F294359A09D274028 /* Pods-MyBluetoothTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBluetoothTest.release.xcconfig"; path = "Target Support Files/Pods-MyBluetoothTest/Pods-MyBluetoothTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +39,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A85A8E6924FD3132CF18847 /* Pods_MyBluetoothTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1242AF4E2BBD7FF900A62CA9 /* CoreBLE */ = {
+			isa = PBXGroup;
+			children = (
+				1255FF2B2B46B2A600888D21 /* ContentView.swift */,
+				1255FF372B46B2CA00888D21 /* BlueCentralManager.swift */,
+				1242AF4F2BBD80BC00A62CA9 /* BluePeripheralManager.swift */,
+			);
+			path = CoreBLE;
+			sourceTree = "<group>";
+		};
+		1242AF512BBD80F100A62CA9 /* BlueJay */ = {
+			isa = PBXGroup;
+			children = (
+				1242AF522BBD81A000A62CA9 /* BlueJayRootView.swift */,
+				1242AF4C2BBD7FCA00A62CA9 /* BluejayManager.swift */,
+			);
+			path = BlueJay;
+			sourceTree = "<group>";
+		};
 		1255FF1D2B46B2A600888D21 = {
 			isa = PBXGroup;
 			children = (
 				1255FF282B46B2A600888D21 /* MyBluetoothTest */,
 				1255FF272B46B2A600888D21 /* Products */,
+				D1344DC34EC499C9798D06A0 /* Pods */,
+				6A8A4E263DADDC976A54DBDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +86,10 @@
 		1255FF282B46B2A600888D21 /* MyBluetoothTest */ = {
 			isa = PBXGroup;
 			children = (
+				1255FF392B46BD3A00888D21 /* Info.plist */,
 				1255FF292B46B2A600888D21 /* MyBluetoothTestApp.swift */,
-				1255FF2B2B46B2A600888D21 /* ContentView.swift */,
+				1242AF4E2BBD7FF900A62CA9 /* CoreBLE */,
+				1242AF512BBD80F100A62CA9 /* BlueJay */,
 				1255FF2D2B46B2A800888D21 /* Assets.xcassets */,
 				1255FF2F2B46B2A800888D21 /* Preview Content */,
 			);
@@ -67,6 +104,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6A8A4E263DADDC976A54DBDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71096F87957CBEB2AC6957E4 /* Pods_MyBluetoothTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1344DC34EC499C9798D06A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6EEDA0D39796E31385F9804 /* Pods-MyBluetoothTest.debug.xcconfig */,
+				D7B06F5F294359A09D274028 /* Pods-MyBluetoothTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1255FF342B46B2A800888D21 /* Build configuration list for PBXNativeTarget "MyBluetoothTest" */;
 			buildPhases = (
+				EF45774F73D5B23E38DAA109 /* [CP] Check Pods Manifest.lock */,
 				1255FF222B46B2A600888D21 /* Sources */,
 				1255FF232B46B2A600888D21 /* Frameworks */,
 				1255FF242B46B2A600888D21 /* Resources */,
+				AE28F9BE3D4F1FB136EA41BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +188,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE28F9BE3D4F1FB136EA41BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBluetoothTest/Pods-MyBluetoothTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBluetoothTest/Pods-MyBluetoothTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBluetoothTest/Pods-MyBluetoothTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF45774F73D5B23E38DAA109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBluetoothTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1255FF222B46B2A600888D21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1255FF382B46B2CA00888D21 /* BlueCentralManager.swift in Sources */,
+				1242AF532BBD81A000A62CA9 /* BlueJayRootView.swift in Sources */,
 				1255FF2C2B46B2A600888D21 /* ContentView.swift in Sources */,
+				1242AF4D2BBD7FCA00A62CA9 /* BluejayManager.swift in Sources */,
 				1255FF2A2B46B2A600888D21 /* MyBluetoothTestApp.swift in Sources */,
+				1242AF502BBD80BC00A62CA9 /* BluePeripheralManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +368,7 @@
 		};
 		1255FF352B46B2A800888D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EEDA0D39796E31385F9804 /* Pods-MyBluetoothTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,7 +377,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyBluetoothTest/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBluetoothTest/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetoothを使うため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +401,7 @@
 		};
 		1255FF362B46B2A800888D21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B06F5F294359A09D274028 /* Pods-MyBluetoothTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,7 +410,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyBluetoothTest/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBluetoothTest/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetoothを使うため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
