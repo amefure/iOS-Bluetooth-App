@@ -49,6 +49,12 @@ class BluePeripheralManager: NSObject, ObservableObject {
     private var notifyCharacteristic: CBMutableCharacteristic!
     private var indicateCharacteristic: CBMutableCharacteristic!
     
+    // Readで読み取られる対象のデータ
+    // Writeで書き換えることができるようになっている
+    private var readingValue: String = "Hello World！！"
+    // Notify通知する対象のデータ
+    private var notifyValue: String = "通知を飛ばしたよ"
+    
     // ②：サービス/キャラクタリスティックを追加する
     private func addService() {
         // サービスの生成
@@ -98,10 +104,9 @@ class BluePeripheralManager: NSObject, ObservableObject {
     // ⑥ Notifyを送信するためのカスタムメソッド
     public func sendNotify() {
         log.append("notifyを送信\n")
-        if let data = "Notify".data(using: .utf8) {
-            self.notifyCharacteristic.value = data
-            peripheralManager.updateValue(data, for: notifyCharacteristic, onSubscribedCentrals: nil)
-        }
+        guard let data = notifyValue.data(using: .utf8) else { return }
+        notifyCharacteristic.value = data
+        peripheralManager.updateValue(data, for: notifyCharacteristic, onSubscribedCentrals: nil)
     }
 }
 
@@ -154,7 +159,7 @@ extension BluePeripheralManager: CBPeripheralManagerDelegate {
     // ④ Readリクエストを受け取った際の処理
     func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest) {
         log.append("Readリクエストを受け取った\n")
-        if let data = "World".data(using: .utf8) {
+        if let data = readingValue.data(using: .utf8) {
             request.value = data
         }
         self.peripheralManager.respond(to: request, withResult: CBATTError.success)
@@ -164,8 +169,12 @@ extension BluePeripheralManager: CBPeripheralManagerDelegate {
     func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveWrite requests: [CBATTRequest]) {
         log.append("writeリクエストを受け取った\n")
         for request in requests {
+            guard let data = request.value else { continue }
+            // Dataから文字列への変換
+            guard let decodedString = String(data: data, encoding: .utf8) else { continue }
             self.readCharacteristic.value = request.value
-            log.append("受け取った値：\(request.value)\n")
+            readingValue = decodedString
+            log.append("受け取った値：\(decodedString)\n")
         }
         self.peripheralManager.respond(to: requests[0], withResult: CBATTError.success)
     }
