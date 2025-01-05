@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CoreBlueRootView.swift
 //  MyBluetoothTest
 //
 //  Created by t&a on 2024/01/04.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CorelueRootView: View {
+struct CoreBlueRootView: View {
     @ObservedObject var blueCentralManager = BlueCentralManager.shared
     @ObservedObject var bluePeripheralManager = BluePeripheralManager.shared
     
@@ -135,6 +135,6 @@ struct CorelueRootView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CorelueRootView()
+        CoreBlueRootView()
     }
 }

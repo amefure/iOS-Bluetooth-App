@@ -11,7 +11,7 @@
 		1242AF502BBD80BC00A62CA9 /* BluePeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242AF4F2BBD80BC00A62CA9 /* BluePeripheralManager.swift */; };
 		1242AF532BBD81A000A62CA9 /* BlueJayRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242AF522BBD81A000A62CA9 /* BlueJayRootView.swift */; };
 		1255FF2A2B46B2A600888D21 /* MyBluetoothTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF292B46B2A600888D21 /* MyBluetoothTestApp.swift */; };
-		1255FF2C2B46B2A600888D21 /* CorelueRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF2B2B46B2A600888D21 /* CorelueRootView.swift */; };
+		1255FF2C2B46B2A600888D21 /* CoreBlueRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF2B2B46B2A600888D21 /* CoreBlueRootView.swift */; };
 		1255FF2E2B46B2A800888D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255FF2D2B46B2A800888D21 /* Assets.xcassets */; };
 		1255FF312B46B2A800888D21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255FF302B46B2A800888D21 /* Preview Assets.xcassets */; };
 		1255FF382B46B2CA00888D21 /* BlueCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255FF372B46B2CA00888D21 /* BlueCentralManager.swift */; };
@@ -24,7 +24,7 @@
 		1242AF522BBD81A000A62CA9 /* BlueJayRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueJayRootView.swift; sourceTree = "<group>"; };
 		1255FF262B46B2A600888D21 /* MyBluetoothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBluetoothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1255FF292B46B2A600888D21 /* MyBluetoothTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBluetoothTestApp.swift; sourceTree = "<group>"; };
-		1255FF2B2B46B2A600888D21 /* CorelueRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorelueRootView.swift; sourceTree = "<group>"; };
+		1255FF2B2B46B2A600888D21 /* CoreBlueRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBlueRootView.swift; sourceTree = "<group>"; };
 		1255FF2D2B46B2A800888D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1255FF302B46B2A800888D21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1255FF372B46B2CA00888D21 /* BlueCentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCentralManager.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		1242AF4E2BBD7FF900A62CA9 /* CoreBLE */ = {
 			isa = PBXGroup;
 			children = (
-				1255FF2B2B46B2A600888D21 /* CorelueRootView.swift */,
+				1255FF2B2B46B2A600888D21 /* CoreBlueRootView.swift */,
 				1255FF372B46B2CA00888D21 /* BlueCentralManager.swift */,
 				1242AF4F2BBD80BC00A62CA9 /* BluePeripheralManager.swift */,
 			);
@@ -237,7 +237,7 @@
 			files = (
 				1255FF382B46B2CA00888D21 /* BlueCentralManager.swift in Sources */,
 				1242AF532BBD81A000A62CA9 /* BlueJayRootView.swift in Sources */,
-				1255FF2C2B46B2A600888D21 /* CorelueRootView.swift in Sources */,
+				1255FF2C2B46B2A600888D21 /* CoreBlueRootView.swift in Sources */,
 				1242AF4D2BBD7FCA00A62CA9 /* BluejayCentralManager.swift in Sources */,
 				1255FF2A2B46B2A600888D21 /* MyBluetoothTestApp.swift in Sources */,
 				1242AF502BBD80BC00A62CA9 /* BluePeripheralManager.swift in Sources */,

@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct MyBluetoothTestApp: App {
+    private var isBlueJay = false
     var body: some Scene {
         WindowGroup {
-            BlueJayRootView()
+            if isBlueJay {
+                // BlueJay
+                BlueJayRootView()
+            } else {
+                // Core Bluetooth
+                CoreBlueRootView()
+            }
         }
     }
 }
